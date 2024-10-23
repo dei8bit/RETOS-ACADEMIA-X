@@ -16,8 +16,8 @@ texto = """Este es un texto de ejemplo.
 python es un lenguaje de programación desafiante y poderoso.
 """
 
-texto_modificado = texto.replace('python', 'Python')
-posicion =  texto_modificado.find('desafiante')
+texto_modificado = texto.replace("python", "Python")
+posicion = texto_modificado.find("desafiante")
 texto_sin_espacios = texto_modificado.strip()
 lista_palabras = texto_sin_espacios.split()
 
@@ -27,7 +27,7 @@ print(texto_modificado)
 print(f"primera posicion de desafiante {posicion}")
 print(texto_sin_espacios)
 print(lista_palabras)
-if texto_sin_espacios.startswith('Este'):
+if texto_sin_espacios.startswith("Este"):
     print("El texto comienza con la palabra 'Este'")
 else:
     print("El texto no comienza con la palabra 'Este'")

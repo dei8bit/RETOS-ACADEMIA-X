@@ -1,47 +1,47 @@
 # Reto: Operadores
- 
+
 # 📌 Crea dos variables numéricas y realiza una suma, resta, multiplicación, división, potencia y modulo con ellas dos.
 # 📌 Crea dos variables numéricas e incrementa en 3 la primera y la segunda increméntala en su doble.
 # 📌 Crea dos variables numéricas diferentes y compara si son iguales, diferentes, mayor o menor una de otra.
 # 📌 Crea dos variables booleanas diferentes y realiza las operaciones and, or y not.
-# 📌 Crea una lista del 1 al 5 y verifica si el numero 3 se encuentra en la lista y si el numero 6 no se encuentra. 
+# 📌 Crea una lista del 1 al 5 y verifica si el numero 3 se encuentra en la lista y si el numero 6 no se encuentra.
 # 📌 Crea dos variables con diferente texto y verifica si son o no son idénticas.
 # 📌 Crea dos variables numéricas y realiza las operaciones binarias (&, |, ^, ~, <<, >>). 🧠
 
 
 num1 = 23
-num2 = 55 
+num2 = 55
 
-suma = num1+num2
-resta = num1-num2
-multiplicacion = num1*num2
-division = num1/num2
+suma = num1 + num2
+resta = num1 - num2
+multiplicacion = num1 * num2
+division = num1 / num2
 potencia = num1**num2
-modulo = num1%num2
+modulo = num1 % num2
 
-incremento_en_tres = num1*3
-incremento_en_dos = num2*2
+incremento_en_tres = num1 * 3
+incremento_en_dos = num2 * 2
 
-numero1= 77
-numero2= 66
+numero1 = 77
+numero2 = 66
 
-bool1= True
-bool2= False
+bool1 = True
+bool2 = False
 
-lista= [1,2,3,4,5]
+lista = [1, 2, 3, 4, 5]
 
-texto1= "SOFOCLES"
-texto2= "sofocles"
+texto1 = "SOFOCLES"
+texto2 = "sofocles"
 
 number1 = 10
 number2 = 12
 
-print (f"suma: {suma}") 
-print (f"resta: {resta}") 
-print (f"multiplicacion: {multiplicacion}") 
-print (f"division: {division}") 
-print (f"potencia: {potencia}") 
-print (f"modulo: {modulo}") 
+print(f"suma: {suma}")
+print(f"resta: {resta}")
+print(f"multiplicacion: {multiplicacion}")
+print(f"division: {division}")
+print(f"potencia: {potencia}")
+print(f"modulo: {modulo}")
 
 print(f"incremento en tres: {incremento_en_tres}")
 print(f"incremento en dos: {incremento_en_dos}")

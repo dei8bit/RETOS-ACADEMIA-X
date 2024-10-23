@@ -70,30 +70,32 @@ def removeUser(username, users):
 salir = False
 
 while not salir:
-  print("Eliga la opcion deseada:\n")
-  print("""
+    print("Eliga la opcion deseada:\n")
+    print(
+        """
         • C: Crear Usuario
         • A: Actualizar Datos
         • B: Borrar Usuario
         • L: Leer Usuario
         • Q: Salir.
-        """)
-  option = input("Inrese una opcion: ").lower()
+        """
+    )
+    option = input("Inrese una opcion: ").lower()
 
-  match option:
-    case "c":
-        newUser(usuarios)
-    case "l":
-        username = "Ingrese nombre de usuario a leer: "
-        readUser(username,usuarios)
-    case "a":
-        username = "Ingrese nombre de usuario a actualizar: "
-        key = "Ingrese campo a actualizar: "
-        data = "Ingrese el nuevo valor: "
-        updateUser(usuarios, key, data, username)
-    case "b":
-        username = "Ingrese nombre de usuario a borrar: "
-        readUser(username,usuarios)
-    case "q":
-        print("saliendo...")
-        salir = True
+    match option:
+        case "c":
+            newUser(usuarios)
+        case "l":
+            username = "Ingrese nombre de usuario a leer: "
+            readUser(username, usuarios)
+        case "a":
+            username = "Ingrese nombre de usuario a actualizar: "
+            key = "Ingrese campo a actualizar: "
+            data = "Ingrese el nuevo valor: "
+            updateUser(usuarios, key, data, username)
+        case "b":
+            username = "Ingrese nombre de usuario a borrar: "
+            readUser(username, usuarios)
+        case "q":
+            print("saliendo...")
+            salir = True

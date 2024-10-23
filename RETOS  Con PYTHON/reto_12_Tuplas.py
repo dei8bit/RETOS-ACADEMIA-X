@@ -4,25 +4,28 @@
 
 biblioteca = []
 
+
 def agregarLibro(titulo, autor, año: int):
     libro = (titulo, autor, año)
     return libro
 
-def llenarBiblioteca(biblioteca:list, libro:tuple):
+
+def llenarBiblioteca(biblioteca: list, libro: tuple):
     biblioteca.append(libro)
     print("Libro cargado correctamente...\n")
     return biblioteca
 
-def verBiblioteca(biblioteca:list):
+
+def verBiblioteca(biblioteca: list):
     for libro in biblioteca:
         print(f"• {libro[0]} - {libro[1]}| Publicado en año: {libro[2]}")
 
-def buscarLibro(autor:str, biblioteca:list):
+
+def buscarLibro(autor: str, biblioteca: list):
     for libro in biblioteca:
         if libro[1] == autor:
             return f"• {libro[1]} -- {libro[0]} || Publicado en año: {libro[2]}\n"
     return None
-
 
 
 libro1 = agregarLibro("El rey y el oso", "Rodo Asegurui", 1970)
@@ -45,23 +48,24 @@ Q: Salir.
     opcion = input("ingrese una opcion deseadada: ").lower()
 
     match opcion:
-      case "a":
-          titulo = input("Ingrese el titulo del libro: ")
-          autor =  input("Ingrese el autor del libro: ")
-          año =    input("Ingrese el año del libro: ")
-          libro = agregarLibro(titulo,autor,año)
-          llenarBiblioteca(biblioteca,libro)
-      case "v":
-          verBiblioteca(biblioteca)
-          print("\n")
-      case "b":
-          autor =  input("Ingrese el autor buscado: ")
-          busqueda = buscarLibro(autor,biblioteca)
-          if busqueda:
-              print(busqueda)
-          else: print("autor no encontrado")
-      case "q":
-          print("saliendo...")
-          break
-      case _:
-          print("Opcion Incorrecta!!!\n")
+        case "a":
+            titulo = input("Ingrese el titulo del libro: ")
+            autor = input("Ingrese el autor del libro: ")
+            año = input("Ingrese el año del libro: ")
+            libro = agregarLibro(titulo, autor, año)
+            llenarBiblioteca(biblioteca, libro)
+        case "v":
+            verBiblioteca(biblioteca)
+            print("\n")
+        case "b":
+            autor = input("Ingrese el autor buscado: ")
+            busqueda = buscarLibro(autor, biblioteca)
+            if busqueda:
+                print(busqueda)
+            else:
+                print("autor no encontrado")
+        case "q":
+            print("saliendo...")
+            break
+        case _:
+            print("Opcion Incorrecta!!!\n")
